@@ -1,9 +1,11 @@
 #Sintetizando a Resposta do ChatGPT Como Voz (gTTS)
 
  !pip install gTTS
+
  Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
  Collecting gTTS
-   Downloading gTTS-2.3.2-py3-none-any.whl (28 kB)
+
+ Downloading gTTS-2.3.2-py3-none-any.whl (28 kB)
  Requirement already satisfied: click<8.2,>=7.1 in /usr/local/lib/python3.10/dist-packages (from gTTS) (8.1.3)
  Requirement already satisfied: requests<3,>=2.27 in /usr/local/lib/python3.10/dist-packages (from gTTS) (2.27.1)
  Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.10/dist-packages (from requests<3,>=2.27->gTTS) (2022.12.7)
@@ -25,3 +27,4 @@ gtts_object.save(response_audio)
 # Reproduz o áudio da resposta salvo no arquivo
 
 display(Audio(response_audio, autoplay=True))
+
