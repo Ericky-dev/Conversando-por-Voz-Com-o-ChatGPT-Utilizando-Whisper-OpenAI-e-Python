@@ -1,6 +1,6 @@
 #Reconhecimento de Fala com Whisper(OpenAI)
 
-  # !pip install git+https://github.com/openai/whisper.git -q
+   !pip install git+https://github.com/openai/whisper.git -q
   
   #Instalar as Dependências
   # Installing build dependencies 
@@ -16,4 +16,5 @@ model = whisper.load_model("small")
 # Transcreve o audio gravado anteriormente.
 result = model.transcribe(record_file, fp16=False, language=language)
 transcription = result["text"]
+
 print(transcription)
