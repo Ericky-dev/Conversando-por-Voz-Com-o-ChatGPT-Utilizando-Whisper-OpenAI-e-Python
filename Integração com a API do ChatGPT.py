@@ -20,7 +20,7 @@
 
 import os
 
-os.environ['OPENAI_API_KEY'] = ''
+os.environ['OPENAI_API_KEY'] = 'secrets.OPENAI_API_KEY'
 import openai
 
 # Configura a chave de API da OpenAI usando a variável de ambiente 'OPENAI_API_KEY'
@@ -37,3 +37,4 @@ response = openai.ChatCompletion.create(
 chatgpt_response = response.choices[0].message.content
 
 print(chatgpt_response)
+
